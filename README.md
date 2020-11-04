@@ -3,8 +3,6 @@
 # bashdb
 A keyvalue database written in bash, for bash!
 
-
-    look -b -t '|' $key $sstable | cut -d '|' -f 2
 ## Motivation
 
 This is just a fun project to better learn bash programming! That is all :) If you ever liked this project and found a real life use for it, please feel free to contact me :)
@@ -43,22 +41,22 @@ In this command:
 
 ## API
 
-**bashdb_set <database> <key> <value>**
+**bashdb_set `<database>` `<key>` `<value>`**
 
 Add or overwrite a value to the database
 
-**bashdb_get <database> <key> <value>**
+**bashdb_get `<database>` `<key>` `<value>`**
 
 Retrive previously set value in the database
 
-**bashdb_contains <database> <key>**
+**bashdb_contains `<database>` `<key>`**
 
 Prints `1` if the key exists in the database, otherwise prints `0`.
 
-**bashdb_remove <database> <key> <value>**
+**bashdb_remove `<database>` `<key>` `<value>`**
 
 Removes a key from the database
 
-**bashdb_count <databse>**
+**bashdb_count `<database>`**
 
 Returns number of items in the database
