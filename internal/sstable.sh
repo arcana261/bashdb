@@ -23,7 +23,7 @@ function _arcana261_bashdb_sstable_count() {
   if [ ! -f $sstable ]; then
     echo "0"
   else
-    wc -l $sstable | awk '{print $1}'
+    grep -v "<REMOVED>" $sstable | wc -l | awk '{print $1}'
   fi
 }
 

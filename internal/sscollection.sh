@@ -189,6 +189,7 @@ function _arcana261_bashdb_sscollection_compact_once() {
     sort -m -u -t '|' -k 1,1 $collection/2.db $collection/1.db > $temp_file
     mv -f $temp_file $collection/1.db
     rm -f $collection/2.db
+    echo "1" > $collection/meta
 
     return 0
   fi
