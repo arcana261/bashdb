@@ -1,0 +1,11 @@
+language: minimal
+dist: trusty
+
+stages:
+  - test
+
+jobs:
+  include:
+    - stage: test
+      script:
+        - make check
