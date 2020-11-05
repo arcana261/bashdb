@@ -3,6 +3,8 @@
 # bashdb
 A keyvalue database written in bash, for bash!
 
+Also please read my blog post about this project [here](https://ucoder.ir/2020/11/04/Implementing-a-Key-Value-datastore-in-Bash/).
+
 ## Motivation
 
 This is just a fun project to better learn bash programming! That is all :) If you ever liked this project and found a real life use for it, please feel free to contact me :)
